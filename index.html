@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Logger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Expense Logger</h1>
+
+  <label>
+    Description:
+    <input type="text" id="desc">
+  </label>
+  <label>
+    Amount:
+    <input type="number" id="amount">
+  </label>
+  <label>
+    Category:
+    <input type="text" id="category">
+  </label>
+  <button onclick="addExpense()">Add Expense</button>
+
+  <table id="expense-table" border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Category</th>
+      <th>Description</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+
+    <tbody id="expense-table-body">
+    </tbody>
+  </table>
+
+  <h3 id="monthly-total">Monthly Total: $0</h3>
+  <h3 id="annual-total">Annual Total: $0</h3>
+
+  <script src="script.js"></script>
+</body>
+</html>
