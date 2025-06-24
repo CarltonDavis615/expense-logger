@@ -23,6 +23,15 @@ function addExpense() {
   expenses.push(expense);
   localStorage.setItem("expenses", JSON.stringify(expenses));
   renderExpenses();
+expenses.push(expense);
+localStorage.setItem("expenses", JSON.stringify(expenses));
+renderExpenses();
+
+// Clear input fields
+document.getElementById("desc").value = "";
+document.getElementById("amount").value = "";
+document.getElementById("category").value = "";
+
 }
 
 function renderExpenses() {
