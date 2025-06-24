@@ -47,3 +47,9 @@ input[type="number"] {
   padding: 6px;
   box-sizing: border-box;
 }
+select {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
