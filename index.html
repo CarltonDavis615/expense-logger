@@ -8,6 +8,7 @@
 <body>
   <h1>Expense Logger</h1>
 
+  <form onsubmit="addExpense(); return false;">
   <label>
     Description:
     <input type="text" id="desc">
@@ -20,7 +21,8 @@
     Category:
     <input type="text" id="category">
   </label>
-  <button onclick="addExpense()">Add Expense</button>
+  <button type="submit">Add Expense</button>
+</form>
 
   <table id="expense-table" border="1" cellspacing="0" cellpadding="8">
   <thead>
