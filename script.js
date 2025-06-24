@@ -18,7 +18,7 @@ function addExpense() {
     amount,
     category,
     date: new Date().toISOString()
-  }
+  };
 
   expenses.push(expense);
   localStorage.setItem("expenses", JSON.stringify(expenses));
